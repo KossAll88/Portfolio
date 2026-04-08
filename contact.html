@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matvii — Contact</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #f8f1e9;
+    }
+    
+    .heading {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .accent-brown { color: #5c4033; }
+  </style>
+</head>
+<body class="text-[#3f2a1e]">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-[#f8f1e9]/95 backdrop-blur-md z-50 border-b border-[#d4c3b0]">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-3xl font-bold heading tracking-tight accent-brown">Matvii</div>
+      <div class="flex gap-8 text-lg font-medium">
+        <a href="index.html" class="hover:text-[#8d6e63] transition-colors">Home</a>
+        <a href="projects.html" class="hover:text-[#8d6e63] transition-colors">Projects</a>
+        <a href="about.html" class="hover:text-[#8d6e63] transition-colors">About</a>
+        <a href="contact.html" class="hover:text-[#8d6e63] transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="min-h-screen pt-28 pb-20 flex items-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h1 class="text-5xl md:text-6xl font-bold heading accent-brown mb-6">
+          Let's Work Together
+        </h1>
+        <p class="text-xl text-[#5c4033]/70 max-w-md mx-auto">
+          I'm always open for new commissions, collaborations, and interesting projects.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-16">
+        
+        <!-- Контактна інформація -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white rounded-3xl p-10 shadow-sm">
+            <h2 class="text-2xl font-semibold heading accent-brown mb-8">Get in Touch</h2>
+            
+            <div class="space-y-8">
+              <div>
+                <p class="text-sm uppercase tracking-widest text-[#8d6e63] mb-1">Email</p>
+                <a href="mailto:matveyko876@gmail.com" 
+                   class="text-xl hover:text-[#8d6e63] transition-colors">
+                  matveyko876@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <p class="text-sm uppercase tracking-widest text-[#8d6e63] mb-1">Telegram</p>
+                <a href="https://t.me/KM16115" 
+                   target="_blank"
+                   class="text-xl hover:text-[#8d6e63] transition-colors">
+                  @KM16115
+                </a>
+              </div>
+
+              <div>
+                <p class="text-sm uppercase tracking-widest text-[#8d6e63] mb-1">Phone</p>
+                <a href="tel:+380681859023" 
+                   class="text-xl hover:text-[#8d6e63] transition-colors">
+                  +38 (068) 185-90-23
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-[#d4c3b0]">
+              <p class="text-[#5c4033]/70">
+                I usually reply within 24-48 hours.<br>
+                Looking forward to hearing from you!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Права колонка з повідомленням -->
+        <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col justify-center">
+          <div class="bg-white/70 backdrop-blur-sm rounded-3xl p-10 border border-[#d4c3b0]">
+            <h3 class="text-2xl font-medium heading accent-brown mb-6">I'm open for:</h3>
+            <ul class="space-y-4 text-lg">
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🎨</span>
+                <span>Commissions & Custom Illustrations</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🖼️</span>
+                <span>Exhibitions & Collaborations</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">📚</span>
+                <span>Book Illustrations & Editorial Work</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🌍</span>
+                <span>International Projects</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 80
+    });
+  </script>
+</body>
+</html>

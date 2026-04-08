@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matvii — About</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #f8f1e9;
+    }
+    
+    .heading {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .accent-brown { color: #5c4033; }
+  </style>
+</head>
+<body class="text-[#3f2a1e]">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-[#f8f1e9]/95 backdrop-blur-md z-50 border-b border-[#d4c3b0]">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-3xl font-bold heading tracking-tight accent-brown">Matvii</div>
+      <div class="flex gap-8 text-lg font-medium">
+        <a href="index.html" class="hover:text-[#8d6e63] transition-colors">Home</a>
+        <a href="projects.html" class="hover:text-[#8d6e63] transition-colors">Projects</a>
+        <a href="about.html" class="hover:text-[#8d6e63] transition-colors">About</a>
+        <a href="contact.html" class="hover:text-[#8d6e63] transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-28 pb-20">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <!-- Hero About -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h1 class="text-5xl md:text-6xl font-bold heading accent-brown mb-6">
+          About Me
+        </h1>
+        <p class="text-xl text-[#5c4033]/70 max-w-2xl mx-auto">
+          Artist & Illustrator from Ukraine
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+
+        <!-- Ліва частина - фото (поки що placeholder) -->
+        <div class="md:col-span-5" data-aos="fade-right">
+          <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+            <img src="https://picsum.photos/id/64/800/1000" 
+                 alt="Matvii" 
+                 class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Права частина - біографія -->
+        <div class="md:col-span-7" data-aos="fade-left">
+          <div class="space-y-8 text-lg leading-relaxed text-[#3f2a1e]/90">
+
+            <p>
+              Hello, I'm Matvii — an artist and illustrator passionate about creating warm, 
+              atmospheric and emotionally rich illustrations.
+            </p>
+
+            <p>
+              I graduated from art school, where I studied traditional drawing, painting and composition for 5 years. 
+              After that, I completed several specialized courses in digital illustration and continued to develop 
+              my skills in Procreate, Photoshop and other digital tools.
+            </p>
+
+            <p>
+              My works combine classical art education with modern digital techniques. 
+              I especially enjoy creating detailed illustrations with a cozy and slightly melancholic atmosphere.
+            </p>
+
+            <div class="pt-6 border-t border-[#d4c3b0]">
+              <h3 class="text-2xl font-semibold heading accent-brown mb-6">Education & Experience</h3>
+              <div class="space-y-6">
+                <div class="flex gap-6">
+                  <div class="w-20 text-right text-sm uppercase tracking-widest text-[#8d6e63] pt-1">
+                    2020 — 2025
+                  </div>
+                  <div>
+                    <p class="font-medium">Art School</p>
+                    <p class="text-[#5c4033]/70">5 years of traditional art education</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-6">
+                  <div class="w-20 text-right text-sm uppercase tracking-widest text-[#8d6e63] pt-1">
+                    2023 — 2025
+                  </div>
+                  <div>
+                    <p class="font-medium">Digital Illustration Courses</p>
+                    <p class="text-[#5c4033]/70">Advanced courses in digital painting and illustration</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-6">
+                  <div class="w-20 text-right text-sm uppercase tracking-widest text-[#8d6e63] pt-1">
+                    2025
+                  </div>
+                  <div>
+                    <p class="font-medium">Exhibition in Oslo, Norway</p>
+                    <p class="text-[#5c4033]/70">One of my works was exhibited and sold</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Додатковий блок про стиль -->
+      <div class="mt-24 text-center" data-aos="fade-up">
+        <div class="max-w-2xl mx-auto">
+          <h3 class="text-2xl font-semibold heading accent-brown mb-6">
+            My Artistic Approach
+          </h3>
+          <p class="text-lg text-[#5c4033]/80 leading-relaxed">
+            I believe that every illustration should tell a story and evoke emotions. 
+            My goal is to create works that feel both timeless and deeply personal.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 80
+    });
+  </script>
+</body>
+</html>

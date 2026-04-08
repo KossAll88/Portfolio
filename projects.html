@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matvii — Projects</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #f8f1e9;
+    }
+    
+    .heading {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .accent-brown { color: #5c4033; }
+
+    /* Горизонтальний скрол */
+    .horizontal-scroll {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .horizontal-scroll::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body class="text-[#3f2a1e]">
+
+ <!-- НОВА АДАПТИВНА НАВІГАЦІЯ -->
+<nav class="fixed top-0 w-full bg-[#f8f1e9]/95 backdrop-blur-md z-50 border-b border-[#d4c3b0]">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+    
+    <div class="text-3xl font-bold heading tracking-tight accent-brown">Matvii</div>
+
+    <!-- Меню для комп'ютера і планшета -->
+    <div class="hidden md:flex gap-8 text-lg font-medium">
+      <a href="index.html" class="hover:text-[#8d6e63] transition-colors">Home</a>
+      <a href="projects.html" class="hover:text-[#8d6e63] transition-colors">Projects</a>
+      <a href="about.html" class="hover:text-[#8d6e63] transition-colors">About</a>
+      <a href="contact.html" class="hover:text-[#8d6e63] transition-colors">Contact</a>
+    </div>
+
+    <!-- Кнопка меню для телефону -->
+    <button id="menu-btn" class="md:hidden text-4xl accent-brown">
+      ☰
+    </button>
+  </div>
+
+  <!-- Мобільне меню, яке виїжджає -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#f8f1e9] border-t border-[#d4c3b0] px-6 py-8">
+    <div class="flex flex-col gap-6 text-center text-lg font-medium">
+      <a href="index.html" class="py-3 hover:text-[#8d6e63]">Home</a>
+      <a href="projects.html" class="py-3 hover:text-[#8d6e63]">Projects</a>
+      <a href="about.html" class="py-3 hover:text-[#8d6e63]">About</a>
+      <a href="contact.html" class="py-3 hover:text-[#8d6e63]">Contact</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  <section class="pt-28 pb-16 bg-[#f8f1e9]">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 data-aos="fade-up" class="text-5xl md:text-6xl font-bold heading accent-brown">
+        My Projects
+      </h1>
+    </div>
+  </section>
+
+  <!-- ==================== BEST WORKS ==================== -->
+  <section class="pb-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 data-aos="fade-up" class="text-3xl font-semibold heading accent-brown mb-8">✨ Best Works</h2>
+
+      <div class="horizontal-scroll overflow-x-auto snap-x snap-mandatory pb-12">
+        <div class="flex gap-10">
+
+          <!-- Твоя робота з Осло -->
+          <div data-aos="fade-right" class="flex-shrink-0 w-[90%] md:w-[680px] bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <img src="https://i.postimg.cc/FzzPPW9Y/izobrazenie-viber-2025-01-14-18-47-34-628.jpg" 
+                 alt="Oslo Exhibition Piece" 
+                 class="w-full">
+            <div class="p-8">
+              <h3 class="text-3xl font-bold heading mb-3 accent-brown">Oslo Exhibition Piece</h3>
+              <p class="text-[#5c4033]/80 leading-relaxed">
+                This work was exhibited in Oslo, Norway and was successfully acquired by a private collector. 
+                It is one of the most important pieces in my artistic journey.
+              </p>
+              <div class="mt-6 inline-block px-5 py-2 bg-[#5c4033] text-white text-sm rounded-2xl">
+                2025 • Exhibited & Sold in Oslo, Norway
+              </div>
+            </div>
+          </div>
+
+          <!-- Друга найкраща робота (поки placeholder) -->
+          <div data-aos="fade-right" data-aos-delay="100" class="flex-shrink-0 w-[90%] md:w-[680px] bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <img src="https://picsum.photos/id/1015/1200/700" 
+                 alt="Second Best Work" 
+                 class="w-full">
+            <div class="p-8">
+              <h3 class="text-3xl font-bold heading mb-3 accent-brown">Second Best Work</h3>
+              <p class="text-[#5c4033]/80 leading-relaxed">
+                Short description of your second highlighted illustration. 
+                You can replace this image and text later.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ALL WORKS ==================== -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 data-aos="fade-up" class="text-3xl font-semibold heading accent-brown mb-12 text-center">
+        All Works
+      </h2>
+
+      <div class="space-y-28">
+
+        <!-- Приклад звичайної роботи -->
+        <div data-aos="fade-up" class="flex flex-col lg:flex-row gap-12 items-center bg-white rounded-3xl shadow-xl overflow-hidden">
+          <div class="lg:w-1/2">
+            <img src="https://picsum.photos/id/201/1200/800" 
+                 alt="Work Example" 
+                 class="w-full">
+          </div>
+          <div class="lg:w-1/2 p-10">
+            <h3 class="text-4xl font-bold heading mb-6 accent-brown">Work Title</h3>
+            <p class="text-lg leading-relaxed text-[#5c4033]/80">
+              Description of this illustration. You can add more works here by copying this block.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<script>
+  // AOS анімації
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 80
+  });
+
+  // === МОБІЛЬНЕ МЕНЮ ===
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+
+    if (mobileMenu.classList.contains('hidden')) {
+      menuBtn.textContent = '☰';
+    } else {
+      menuBtn.textContent = '✕';
+    }
+  });
+</script>
+</body>
+</html>
