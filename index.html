@@ -28,25 +28,16 @@
     .hero {
       background: linear-gradient(135deg, #5c4033 0%, #8d6e63 100%);
     }
-    
-    .card {
-      background-color: #fffef9;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-25px); }
-    }
   </style>
 </head>
 <body class="text-[#3f2a1e]">
 
   <!-- Navigation -->
   <nav class="fixed top-0 w-full bg-[#f8f1e9]/95 backdrop-blur-md z-50 border-b border-[#d4c3b0]">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="text-3xl font-bold heading tracking-tight accent-brown">Matvii</div>
+    <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+      <div class="text-2xl md:text-3xl font-bold heading tracking-tight accent-brown">Matvii</div>
       
-      <div class="flex gap-8 text-lg font-medium">
+      <div class="flex gap-5 md:gap-8 text-base md:text-lg font-medium">
         <a href="index.html" class="hover:text-[#8d6e63] transition-colors">Home</a>
         <a href="projects.html" class="hover:text-[#8d6e63] transition-colors">Projects</a>
         <a href="about.html" class="hover:text-[#8d6e63] transition-colors">About</a>
@@ -57,23 +48,23 @@
 
   <!-- Hero Section -->
   <section class="hero min-h-screen flex items-center relative text-white">
-    <div class="max-w-6xl mx-auto px-6 pt-20">
-      <div data-aos="fade-up" class="max-w-2xl">
-        <h1 class="text-6xl md:text-7xl font-bold heading leading-tight mb-6">
+    <div class="max-w-6xl mx-auto px-5 md:px-6 pt-20 md:pt-24">
+      <div data-aos="fade-up" class="max-w-xl md:max-w-2xl">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold heading leading-tight mb-6">
           Hello, I'm <span class="text-[#f8f1e9]">Matvii</span>
         </h1>
-        <p class="text-2xl md:text-3xl opacity-90 mb-10">
+        <p class="text-xl md:text-2xl lg:text-3xl opacity-90 mb-10 leading-tight">
           Artist & Illustrator<br>
           Creating warm and atmospheric illustrations
         </p>
         
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-col sm:flex-row gap-4">
           <a href="projects.html" 
-             class="px-8 py-4 bg-white text-[#5c4033] font-semibold rounded-2xl hover:scale-105 transition-all shadow-lg">
+             class="px-8 py-4 bg-white text-[#5c4033] font-semibold rounded-2xl hover:scale-105 active:scale-95 transition-all text-center shadow-lg">
             View My Projects
           </a>
           <a href="contact.html" 
-             class="px-8 py-4 border-2 border-white/80 font-semibold rounded-2xl hover:bg-white/10 transition-all">
+             class="px-8 py-4 border-2 border-white/80 font-semibold rounded-2xl hover:bg-white/10 transition-all text-center">
             Get In Touch
           </a>
         </div>
