@@ -32,9 +32,8 @@
     }
 
     .best-card {
-      min-width: 520px;
-      scroll-snap-align: start;
       transition: all 0.4s ease;
+      flex-shrink: 0;
     }
     .best-card:hover {
       transform: translateY(-8px);
@@ -88,7 +87,7 @@
     </div>
   </section>
 
-  <!-- BEST WORKS -->
+  <!-- BEST WORKS - Адаптивный горизонтальный скрол -->
   <section class="pb-20">
     <div class="max-w-6xl mx-auto px-6">
       <h2 data-aos="fade-up" class="text-3xl font-semibold heading accent-brown mb-8 pl-2">
@@ -96,22 +95,31 @@
       </h2>
       
       <div class="horizontal-scroll overflow-x-auto snap-x snap-mandatory pb-10">
-        <div class="flex gap-10">
+        <div class="flex gap-6 md:gap-10">
 
-          <div data-aos="fade-right" class="best-card bg-white p-6 rounded-3xl shadow-xl">
-            <img src="https://i.postimg.cc/TPZB16yj/Znimok-ekrana-2026-04-08-o-22-35-29.png" class="w-full rounded-2xl mb-5" alt="Japan">
+          <!-- Карточка 1 -->
+          <div data-aos="fade-right" 
+               class="best-card w-[calc(100vw-3rem)] md:w-[520px] bg-white p-6 rounded-3xl shadow-xl snap-start">
+            <img src="https://i.postimg.cc/TPZB16yj/Znimok-ekrana-2026-04-08-o-22-35-29.png" 
+                 class="w-full rounded-2xl mb-5" alt="Japan">
             <h3 class="text-2xl font-bold heading mb-2">Project for Japan</h3>
             <p class="text-[#5c4033]/80">International recognition</p>
           </div>
 
-          <div data-aos="fade-right" data-aos-delay="100" class="best-card bg-white p-6 rounded-3xl shadow-xl">
-            <img src="https://i.postimg.cc/kgJ8bRr2/IMG-9354.jpg" class="w-full rounded-2xl mb-5" alt="GENIUS">
+          <!-- Карточка 2 -->
+          <div data-aos="fade-right" data-aos-delay="100" 
+               class="best-card w-[calc(100vw-3rem)] md:w-[520px] bg-white p-6 rounded-3xl shadow-xl snap-start">
+            <img src="https://i.postimg.cc/kgJ8bRr2/IMG-9354.jpg" 
+                 class="w-full rounded-2xl mb-5" alt="GENIUS">
             <h3 class="text-2xl font-bold heading mb-2">GENIUS Olympiad Ukraine</h3>
             <p class="text-[#5c4033]/80">Bronze Medal Winner • 2025</p>
           </div>
 
-          <div data-aos="fade-right" data-aos-delay="200" class="best-card bg-white p-6 rounded-3xl shadow-xl">
-            <img src="https://i.postimg.cc/FzzPPW9Y/izobrazenie-viber-2025-01-14-18-47-34-628.jpg" class="w-full rounded-2xl mb-5" alt="Oslo">
+          <!-- Карточка 3 -->
+          <div data-aos="fade-right" data-aos-delay="200" 
+               class="best-card w-[calc(100vw-3rem)] md:w-[520px] bg-white p-6 rounded-3xl shadow-xl snap-start">
+            <img src="https://i.postimg.cc/FzzPPW9Y/izobrazenie-viber-2025-01-14-18-47-34-628.jpg" 
+                 class="w-full rounded-2xl mb-5" alt="Oslo">
             <h3 class="text-2xl font-bold heading mb-2">Oslo Exhibition Piece</h3>
             <p class="text-[#5c4033]/80">Exhibited & Sold in Oslo, Norway • 2025</p>
           </div>
